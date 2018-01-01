@@ -1,9 +1,6 @@
 
 /**
  * Class to validate the request.
- * 
- * Assumptions: It receives an array of strings with only apples and oranges. All other values or datatypes are ignored
- * and generate invalid request message.
  */
 class ReqValidation
 {
@@ -12,7 +9,7 @@ class ReqValidation
   def validate(request: Array[String]): Boolean = {
     for (fruit <- request)
     {
-    	if( !fruit.equalsIgnoreCase("apples") && !fruit.equalsIgnoreCase("oranges") )
+    	if( !fruit.equalsIgnoreCase("apple") && !fruit.equalsIgnoreCase("orange") )
     	{
         return false
     	}
